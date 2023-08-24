@@ -16,8 +16,8 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 3 */
-  background: #000;
-  color: #ffffff;
+  background: #fff;
+  color: #666;
 }
 /*
  * Remove the margin in all browsers.
@@ -5178,7 +5178,7 @@ ul.uk-nav-sub {
 /* Container
  ========================================================================== */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #000;
+  background: #f8f8f8;
 }
 /* Groups
  ========================================================================== */
