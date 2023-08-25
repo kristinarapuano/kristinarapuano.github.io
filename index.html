@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure responsiveness -->
+    <title>About</title>
     <link rel="stylesheet" href="css/uikit.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,9 +27,9 @@
     </div>
 
     <!-- Navigation Bar -->
-    <nav class="uk-navbar-container uk-margin-small" uk-navbar>
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
         <div class="uk-navbar-left">
-            <a href="#" class="uk-navbar-item uk-logo uk-light">kristina rapuano.</a>
+        <!-- <a href="#" class="uk-navbar-item uk-logo uk-light">kristina rapuano.</a> -->
         </div>
         <div class="uk-navbar-right uk-hidden@m">
             <a uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav" class="uk-navbar-toggle"></a>
@@ -43,8 +42,18 @@
             </ul>
         </div>
     </nav>
+
     <!-- Navigation Bar Ends  -->
 
+    <!-- About Content -->
+    <section class="uk-section uk-padding-large">
+        <div class="uk-container">
+            <h1 class="uk-text-left">Hi, I'm Kristina.</h1>
+            <p class="uk-text-lead uk-text-left">
+                I'm a research scientist based in San Fransisco. I'm passionate about using data to understand and improve human well-being, and how AI can help. I'm currently working at a startup called <a href="https://www.betterup.com/">BetterUp</a>. I also have a PhD in Cognitive Neuroscience from Dartmouth College.
+            </p>
+        </div>
+    </section>
 </body>
 
 </html>

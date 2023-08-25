@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure responsiveness -->
     <title>About</title>
     <link rel="stylesheet" href="css/uikit.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,13 +12,29 @@
     <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.js"></script>
 </head>
+
 <body>
-    <!-- Navigation Bar (Same as main page) -->
+
+    <!-- Mobile Off-canvas Navbar -->
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav uk-nav-default">
+                <li><a class="uk-text-capitalize" href="about.html">About</a></li>
+                <li><a class="uk-text-capitalize" href="projects.html">Projects</a></li>
+                <li><a class="uk-text-capitalize" href="mailto:kristinarapuano@gmail.com">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
     <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
         <div class="uk-navbar-left">
-            <a href="index.html" class="uk-navbar-item uk-logo uk-light">kristina rapuano.</a>
+        <!-- <a href="#" class="uk-navbar-item uk-logo uk-light">kristina rapuano.</a> -->
         </div>
-        <div class="uk-navbar-right">
+        <div class="uk-navbar-right uk-hidden@m">
+            <a uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav" class="uk-navbar-toggle"></a>
+        </div>
+        <div class="uk-navbar-right uk-visible@m">
             <ul class="uk-navbar-nav uk-light">
                 <li class="uk-active"><a class="uk-button-text uk-text-capitalize" href="about.html">About</a></li>
                 <li><a class="uk-button-text uk-text-capitalize" href="projects.html">Projects</a></li>
@@ -25,6 +42,7 @@
             </ul>
         </div>
     </nav>
+    <!-- Navigation Bar Ends  -->
 
     <!-- About Content -->
     <section class="uk-section uk-padding-large">

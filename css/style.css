@@ -1,24 +1,24 @@
 html, body, p {
-    background-color: black !important;
-    color: white !important;
+    background-color: black;
+    color: white ;
     font-family: 'Urbanist', sans-serif;
 }
 
 h1 {
-    color: white !important;
-    text-transform: capitalize !important;
-    font-size: 8rem !important;
+    color: white;
+    text-transform: capitalize;
+    font-size: 8rem;
     font-family: 'Calistoga', sans-serif;
 }
 
 p {
-    background-color: black !important;
+    background-color: black;
     color: white !important;
-    font-size: 1.2rem !important;
+    font-size: 1.2rem  !important;
 }
 
 .uk-button-text, .uk-navbar-item {
-    font-size: 1rem !important;
+    font-size: 1rem;
 }
 
 .uk-navbar-container {
@@ -30,10 +30,10 @@ p {
 }
 
 a {
-    color: #ce0058 !important;
+    color: #ce0058;
 }
 
 a:hover {
-    color: #d2d2d2 !important;
+    color: #d2d2d2;
 }
 
