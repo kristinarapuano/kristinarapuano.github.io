@@ -30,7 +30,7 @@ p {
 }
 
 a {
-    color: #ce0058;
+    color: #ce0058 !important;
 }
 
 a:hover {
